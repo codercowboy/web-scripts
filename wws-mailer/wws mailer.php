@@ -4,7 +4,7 @@
 	// #
 	// #  World's Worst Software Mail Script - php form mailing script
 	// #   written by Jason Baker (jason@onejasonforsale.com)
-	// #   on github: https://github.com/codercowboy/scripts
+	// #   on github: https://github.com/codercowboy/web-scripts
 	// #   more info: http://www.codercowboy.com
 	// #
 	// #    Written for use on the following sites:

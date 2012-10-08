@@ -5,7 +5,7 @@
 	 * write variable to file library - (c) 2007 Jason Baker
 	 *
 	 * written by Jason Baker (jason@onejasonforsale.com)
-	 * on github: https://github.com/codercowboy/scripts
+	 * on github: https://github.com/codercowboy/web-scripts
 	 * more info: http://www.codercowboy.com
 	 * 
 	 *
