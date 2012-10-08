@@ -4,7 +4,7 @@ Coder Cowboy Web Scripts
 Various web scripts (php, javascript, etc) to help you on your way.
 
 * written by Jason Baker ([jason@onejasonforsale.com](mailto:jason@onejasonforsale.com))
-* on github: [https://github.com/codercowboy/scripts](https://github.com/codercowboy/scripts)
+* on github: [https://github.com/codercowboy/web-scripts](https://github.com/codercowboy/web-scripts)
 * more info: [http://www.codercowboy.com](http://www.codercowboy.com)
 
 Basic Instructions
