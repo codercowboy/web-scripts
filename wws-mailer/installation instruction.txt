@@ -1,0 +1,51 @@
+World's Worst Software Mail Script Installation Instructions
+
+This document and the mail script were written by Jason Baker. Feel free to contact him via the World's Worst Software website at http://www.worldsworstsoftware.com if you have any questions or concerns. 
+
+********************************
+* Step 1: Configure The Script *
+********************************
+
+Before you upload the script you will need to edit it a little. Open the file wws mailer.php in a text editor. At the top of the file you will find a section that looks like the following:
+
+  /* put your email address in the quotes below */
+  $to_email_address = "put@youremail.here.com";
+
+  /* if you want a from name override, put that in the quotes below, otherwise put "" */
+  $from_name_override = "";
+
+  /* put your header include file name here, make sure it's a relative path to the script */
+  $header_include_file_path = "EmailFormHeader.html";
+
+  /* put your footer include file name here, make sure it's a relative path to the script */
+  $footer_include_file_path = "EmailFormFooter.html";
+
+You will need to fill in some information for configuration here. The first thing you should do is change that email address between the quotes from put@youremail.here.com to something else. Make sure you leave the quotes before and after the email address. Dont worry about putting your email address here, it will be hidden from visitors when the php script is run to generate what the visitor sees in their browser. 
+
+The "From Name Override" feature is enabled if you put a value between the quotes there. For example you could put something like:
+
+$from_name_override = "My Webpage Mailer";
+
+Then any mail sent from the script will show up in your inbox from "My Webpage Mailer", and the original sender's name and email address will be appended to the end of the email you receive. 
+
+Next up, assuming you don't like the included crummy header and footer include files, you'll want to edit those files yourself or change the $header_include_file_path and $footer_include_file_path to point to your standard header/footer includes. 
+
+Now save your work. 
+
+Finally, you'll probably want to rename the "wws mailer.php" file to something more friendly like "contact.php".
+
+*****************************
+* Step 2: Upload The Script *
+*****************************
+
+Now you just need to connect to your webhost and upload the mailer php file, the header file, the footer file and any associated stylesheets and/or images you may have hacked into the final mailer look. 
+
+***************************
+* Step 3: Test The Script *
+***************************
+
+Next up, point your browser to wherever you put the script. For example, I named my mailer script "contact.php" for the World's Worst Software site, so in that example I'd point my browser to http://www.worldsworstsoftware.com/contact.php .
+
+Fill in the fields with some test data, then click submit. 
+
+You should receive the test email in a few moments. If you do not receive the test email you may want to double check that you typed your email address in correctly in the configuration section of the php file. If that's all good to go, it may be that your webhost has misconfigured or disabled the php configuration on the webhost such that the mail functions do not work. In that case you may want to contact your webhost's system admin and ask them if your webhosting account is allowed to send mail via php. Many times webhost admins will provide a mailer script of their own when they disable personal accounts from using the php mail functions. 
